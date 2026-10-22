@@ -1,1 +1,0 @@
-# Al doilea depozit
