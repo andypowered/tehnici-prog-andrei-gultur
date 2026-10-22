@@ -1,0 +1,10 @@
+{
+  "mod": "straturi",
+  "sursa": "probe/mesaj.txt",
+  "strat": [
+    "url",
+    "base64",
+    "hex"
+  ],
+  "rezultat": "FLAG{straturi_multiple_decodate}"
+}
