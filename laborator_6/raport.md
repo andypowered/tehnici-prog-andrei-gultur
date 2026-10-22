@@ -126,20 +126,3 @@ FLAG{ascuns_in_pixeli}
 
 Doar 55 din 120 000 de pixeli diferă — imaginea arată identic cu originalul.
 Mesajul dezvăluit: **`FLAG{ascuns_in_pixeli}`**.
-
-## Vârful sălii (opțional) — `probe/challenge.bin`
-
-Fișier combinat: `hex(base64(xor(clar)))` + `challenge_sha256.txt` de verificare.
-Pași, cu uneltele proprii: `decodeaza_straturi` desface `hex` (se oprește
-corect: următorul nivel e base64 peste octeți XOR, deci binar, necitibil) →
-`base64.b64decode` → forță brută XOR → cheia **42**, text
-`FLAG{challenge_combinat_xor_plus_base64}`, iar `sha256` coincide cu
-`dcf21b76…4927`. Verificat, nu ghicit.
-
-## Ce se predă
-
-- `probe/pregateste.py` + fișierele generate (`mesaj.txt`, `xor.bin`,
-  `hashuri.txt`, `wordlist.txt`, `foto.jpg`, `ascuns.png`, `challenge.bin`)
-- `arsenal/forensics/decode.py`, `forensics.py`, `stego.py`
-- `arsenal/forensics/fisa.json`, `teste/test_decode.py`, `stego.png`
-- acest `raport.md`
