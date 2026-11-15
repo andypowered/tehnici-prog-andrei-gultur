@@ -17,6 +17,10 @@ Laboratoare si lucrari 2026.
 ├── Laborator_5/
 ├── Laborator_6/
 ├── Laborator_8/
+├── Laborator_10/
+|   └── arsenal/  
+├── Laborator_11/
+|   └── arsenal/  
 ├── privesc/
 └── httptools.py
 
